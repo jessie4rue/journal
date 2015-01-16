@@ -5,9 +5,16 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<title>Fun With Javascript and Jquery</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		a.test {
+			font-weight: bold;
+		}
+	</style>
 </head>
 
 <body>
+
+	<button>This is a button.</button>
 
 	<a href="http://www.google.com">Google</a>
 
@@ -18,7 +25,14 @@
 	//	};
 	$(document).ready(function(){
 		$("a").click(function(event){
-			alert("Goodbye Ladies!")
+			 alert( "As you can see, the link no longer took you to jquery.com" );
+			event.preventDefault();
+			$("a").removeClass("test");
+			$(this).hide("slow");
+		});
+		$("a").addClass("test");
+		$("button").click(function(event){
+			$(this).hide("fast");
 		});
 	});
 	</script>
