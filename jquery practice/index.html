@@ -5,31 +5,14 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<title>Fun With Javascript and Jquery</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<style type="text/css">
-		a.test {
-			font-weight: bold;
-		}
-	</style>
 </head>
 
 <body>
 
-	<a href="http://www.google.com">Google</a>
+	<h1>Hello World!</h1>
+	<button>Click Me!</button>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script type="text/javascript">
-	//	window.onload = function(){
-	//		alert("Welcome");
-	//	};
-	$(document).ready(function(){
-		};
-		$("a").click(function(event){
-			 alert( "As you can see, the link no longer took you to jquery.com" );
-			event.preventDefault();
-			$("a").removeClass("test");
-			$(this).hide("slow");
-		});
-		$("a").addClass("test");
-	</script>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
